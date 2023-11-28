@@ -8,6 +8,8 @@
     - [Pull Requests](src/practices/pr.md)
     - [Code Commenting](src/practics/comments.md)
     - [Testing](src/practices/testing/intro.md)
+        - [Unit](src/practices/testing/unit.md)
+        - [E2E](src/practices/testing/e2e.md)
     - [Definition of Done](src/practices/dod.md)
 - [Code Style Guides](src/style-guides/intro.md)
     - [Golang](src/style-guides/go.md)
