@@ -3,7 +3,7 @@
 - [SWE Guidelines](README.md)
 - [Github](src/github/intro.md)
     - [Project Tracking](src/github/project-tracking.md)
-- [Engineering Practices]()
+- [Engineering Practices](src/practices/intro.md)
     - [Repository Layout](src/practices/repo.md)
     - [Pull Requests](src/practices/pr.md)
 - [Code Style Guides](src/style-guides/intro.md)
