@@ -1,0 +1,35 @@
+
+# This is the main CI workflow
+name: ci
+
+# This workflow is triggered on pull requests to the main branch
+on:
+  pull_request:
+    branches:
+      - main
+
+# The jobs that this workflow will run
+jobs:
+  # The build job
+  build:
+    # This job runs on the latest version of Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repository
+      - uses: actions/checkout@v2
+      # Install Rust
+      - name: Install Rust
+        run: | 
+          # Download and install Rust
+          curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+          # Update Rust to the latest version
+          rustup update
+      # Setup the project
+      - name: Setup
+        run: make setup
+      # Lint the code
+      - name: Lint
+        run: make lint
+      # Build the project
+      - name: Build
+        run: make build

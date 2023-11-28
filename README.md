@@ -11,9 +11,7 @@ To build the book, you will need to have mdBook installed. If you don't have it,
     cargo install mdbook
 ```
 
-Then you can run:
+Then you can serve the book on `http://localhost:3000`:
 ```
-    mdbook build
+    mdbook serve
 ```
-
-and your `mdbook` should be created in `book/index.html`.
