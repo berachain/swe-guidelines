@@ -22,8 +22,7 @@ jobs:
       - name: Install Rust
         run: | 
           # Download and install Rust
-          curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-          # Update Rust to the latest version
+          curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf -y | sh
           rustup update
       # Setup the project
       - name: Setup
