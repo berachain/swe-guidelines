@@ -2,7 +2,7 @@
 #
 # To get started with mdBook see: https://rust-lang.github.io/mdBook/index.html
 #
-name: mdbook
+name: deploy
 
 on:
   # Runs on pushes targeting the default branch
@@ -48,7 +48,7 @@ jobs:
           path: ./book
 
   # Deployment job
-  deploy:
+  github-pages:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

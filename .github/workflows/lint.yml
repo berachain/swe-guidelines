@@ -1,6 +1,6 @@
 
 # This is the linting CI workflow
-name: lint
+name: ci
 
 # This workflow is triggered on pull requests to the main branch
 on:
@@ -11,8 +11,7 @@ on:
 
 # The jobs that this workflow will run
 jobs:
-  # The build job
-  build:
+  lint:
     # This job runs on the latest version of Ubuntu
     runs-on: macos-latest
     steps:
