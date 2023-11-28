@@ -8,10 +8,10 @@ This guide is a work in progress and we welcome contributions. If you have sugge
 
 To build the book, you will need to have mdBook installed. If you don't have it, you can install it with:
 ```
-    cargo install mdbook
+cargo install mdbook
 ```
 
 Then you can serve the book on `http://localhost:3000`:
 ```
-    mdbook serve
+mdbook serve
 ```
