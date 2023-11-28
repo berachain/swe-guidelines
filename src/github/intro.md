@@ -1,1 +1,1 @@
-# Github Practices
+# Github Usage
