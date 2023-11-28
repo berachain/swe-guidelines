@@ -10,6 +10,10 @@ all: fmt build
 build:
 	@mdbook build
 
+## This target serves the book locally
+serve:
+	@mdbook serve
+
 ## This target will setup the necessary tools for the project
 setup:
 	@rustup component add rustfmt
