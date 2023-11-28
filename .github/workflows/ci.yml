@@ -4,9 +4,10 @@ name: ci
 
 # This workflow is triggered on pull requests to the main branch
 on:
+  push:
+    branches: ["main"]
   pull_request:
-    branches:
-      - main
+    branches: ["*"]
 
 # The jobs that this workflow will run
 jobs:
