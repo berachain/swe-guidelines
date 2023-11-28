@@ -39,9 +39,9 @@ jobs:
           cargo install --version ${MDBOOK_VERSION} mdbook
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v3
-      - name: Build with mdBook
-        run: mdbook build
+        uses: actions/configure-pages@v3 sd
+      - name: Build
+        run: make build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
